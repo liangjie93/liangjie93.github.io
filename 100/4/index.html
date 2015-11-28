@@ -4,15 +4,24 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<style>
-	.box{position:relative;
-	  width: 250px;height: 250px;background-color: pink;}
-	.ball{position:absolute;top:10px;left:20px;
-	  width: 100px;height: 100px;background-color: yellow;border-radius: 50%;
-	  transition:all 2s;}
-	.box:hover .ball{background-color:red;top:100px;left:100px;border-radius: 20%;}  
+	.box{
+		width: 250px;
+		height: 250px;
+		background-color: pink;
+	}
+	.ball{
+		width: 100px;
+		height: 100px;
+		background-color: yellow;border-radius: 50%;
+		transition:background-color 2s;
+	}
+	.box:hover .ball{
+		background-color:red;
+	}  
 	</style>
 </head>
 <body>
+	<h3>transition 过渡</h3>
     <div class="box">
       <div class="ball"></div>
     </div>
