@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	.clearfix:before,
+	.clearfix:after {
+	    content: " ";
+	    display: table;
+	}
+
+	.clearfix:after {
+	    clear: both;
+	}
+
+	.parent{
+	  background-color: #aaa;
+	  border:8px solid red;
+	}
+	.left{
+	  width: 40%;
+	  height: 200px;
+	  float: left;
+	  background-color: antiquewhite;
+	}
+	.right{
+	  background-color: palevioletred;
+	  width: 60%;
+	  float: right;
+	  height: 200px;
+	}
+
+	</style>
+</head>
+<body>
+	<h1>clearfix 为我们解决的两个问题</h1>
+	<h2>问题1：父元素失去了高度</h2>
+	
+	<div class="parent clearfix">
+	   <div class="left"></div>
+	   <div class="right"></div>
+	</div>
+</body>
+</html>
