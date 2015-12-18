@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>jquary</title>
+	<title>Document</title>
 	<script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
 	<style>
 		.circle {
@@ -18,15 +18,12 @@
 	</style>
 </head>
 <body>
-	<div class="circle red"></div>
+	<div class="circle"></div>
 	
-
 	<script>
 		$('.circle').click(function(){
-			// $('.circle').removeClass('red');			
-			alert('hello clicked!');
-			// $('.circle').addClass('red');   
-	    });	
+			$(this).toggleClass('red');
+		});
 	</script>
 </body>
 </html>
