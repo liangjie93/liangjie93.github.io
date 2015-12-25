@@ -3,13 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<meta name="viewport" content="width=device-width">
 	<style>
 		.box {
-			width: 961px;
+			width: 400px;
 			height: 40px;
 			background-color: lightskyblue;
-			color: aqua;
-			font-size: 20px;
+			color: mistyrose;
+			font-size: 16px;
 			margin: 0 auto;
 			text-align: center;
 			line-height: 40px;
@@ -17,8 +18,10 @@
 	</style>
 </head>
 <body>
+	<h3> meta name="viewport" content="width=device-width"</h3>
+	<h1>没有上面这一行，我们给元素的像素值会被手机浏览器压缩，有了上面这一行，就正常了。</h1>
 	<div class="box">
-		宽度961px
+		font-size: 16px
 	</div>
 </body>
 </html>
