@@ -92,9 +92,12 @@ header{
 
 #logo{
     display : block;
-    padding : 48px 40px;
+    padding : 20px 50px;
 }
 
+#logo img{
+       border-radius: 50%;
+}
 nav{
     width: 100%;
 }
