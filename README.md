@@ -1,5 +1,2 @@
-<<<<<<< HEAD
 
-=======
-# liangjie93.github.io
->>>>>>> origin/master
+ liangjie93.github.io
