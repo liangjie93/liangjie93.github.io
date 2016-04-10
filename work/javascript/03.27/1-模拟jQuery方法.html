@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>模拟jQuery方法</title>
+</head>
+<body>
+	<ul id="list" class="list 1 2 3 4"> 
+		<li id="first">1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+	</ul>
+
+	<script>
+		var oLi = document.getElementById("first");
+		var oUl = document.getElementById("list");
+
+		addClass(oUl,"test");
+		removeClass(oUl,"4");	//删除class名 “4”
+
+		function index(element){
+			var arr = element.parentNode.children; //元素父级的子级
+			for(var i = 0;i<arr.length;i++){	
+				if(arr[i] == element){		//如果这个元素等于本身
+				return i;		//返回i
+				}
+			}
+		}
+
+		function silbings(element){			
+			var arr=element.parentNode.children;	//元素父级的子级
+			newArr = [];
+			for(var i=1;i<arr.length;i++){
+				if(arr[i] != element){		//如果这个元素不等于本身
+					newArr.push(arr[i])		//把这个元素添加到新数组中
+				}
+			}
+		}
+
+		function addClass(element,className){
+			element.className = element.className + " " + className;
+		}
+
+		function removeClass(element,className){
+			//var str =  element.className;
+			var arr = element.className.split(" ");	//将class名的字符串转换为数组
+													//（连接符是空格）
+			var newArr = [];		//新建一个数组
+			//console.log(arr);
+			for(var i=0;i<arr.length;i++){	
+				if(arr[i] != className){	//当原数组中的class名不等于要删除的class名时
+					newArr.push(arr[i]);	//输出到新数组中，即删除了某一class名
+				}
+			}
+			var str = newArr.join(" ");		//将新数组转换成字符串（连接符是空格）
+			element.className = str;		//class名=字符串
+		}
+
+	</script>
+</body>
+</html>

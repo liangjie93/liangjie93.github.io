@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text" id="txt">
+	<input type="button" id="btn" value="测试">
+
+	<script src="../jquery-1.11.1.js"></script>
+	<script>
+		$("#btn").click(function(){
+			var val = Number($("#txt").val());
+			if(val>=0 && val<=10){
+				alert("0~10");
+			}
+		})
+	</script>
+</body>
+</html>

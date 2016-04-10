@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>添加和删除节点</title>
+</head>
+<body>
+	<input type="text" id="txt">
+	<input type="button" id="btn" value="添加">
+	<ul id="list">
+		<li>苹果 <span class="del">删除</span></li>
+		<li>香蕉 <span class="del">删除</span></li>
+		<li>桔子 <span class="del">删除</span></li>
+	</ul>
+
+	<script>
+		//获取属性
+		var oTxt = document.getElementById("txt");
+		var oBtn = document.getElementById("btn");
+		var oList = document.getElementById("list");
+		var aDel = document.getElementsByClassName("del");
+
+		oBtn.onclick = function(){
+			var val = oTxt.value;	//获取文本值
+			var txtNode = document.createTextNode(val);
+			var listNode = document.createElement("li");
+			listNode.appendChild(txtNode);	//
+			oList.appendChild(listNode);
+		}
+
+		for(var i=0;i<aDel.length;i++){
+			aDel[i].onclick=function(){
+				oList.removeChild(this.parentNode) //ul删除子级：span的父节点
+			}
+		}
+
+	</script>
+</body>
+</html>

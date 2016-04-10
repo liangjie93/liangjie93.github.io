@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>菜单置顶</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.header{
+			height: 400px;
+			background-color: #aaa;
+		}
+		.header ul{
+			list-style: none;
+			position: fixed;
+			top: 0;
+			left: 20px;
+		}
+		.header ul li{
+			height: 50px;
+			width: 100px;
+			float: left;
+			border:red 1px solid;
+			text-align: center;
+			line-height: 50px;
+		}
+		.header a{
+			text-decoration: none;
+			color:black;
+		}
+		.banner{
+			height: 400px;
+			background-color: #aa0;
+		}
+		.main{
+			height: 400px;
+			background-color: #a00;
+		}
+		.footer{
+			height: 400px;
+			background-color: #0a0;
+		}
+		.toTop{
+			width: 30px;
+			height: 30px;
+			background-color: pink;
+			position: fixed;
+			bottom: 10px;
+			right: 10px;
+			display: none;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<ul>
+			<li><a href=".header">header</a></li>
+			<li><a href=".banner">banner</a></li>
+			<li><a href=".main">main</a></li>
+			<li><a href=".footer">footer</a></li>
+		</ul>
+	</div>
+	<div class="banner"></div>
+	<div class="main"></div>
+	<div class="footer"></div>
+	<div class="toTop"></div>
+	
+	<script src="../jquery-1.11.1.js"></script>
+	<script>
+		$(window).scroll(function(){
+			var sTop = $(window).scrollTop();
+			//console.log(sTop);
+			if(sTop > 200){
+				$(".toTop").css("display","block")	//距离顶部200px时显示
+			}else{
+				$(".toTop").css("display","none")	//距离小于200时隐藏
+			}
+		})
+		$(".toTop").click(function(){	
+			//$(window).scrollTop(0);	//点击时滚动到距离顶部0
+			$("html,body").animate({scrollTop:0},1000)
+		})
+
+		$("ul li a").click(function(){
+			var href = $(this).attr("href");
+			var offsetTop = $(href).offset().top;
+			//$(window).scrollTop(offsetTop);
+			$("html,body").animate({scrollTop:offsetTop},1000);
+			return false;
+		})
+
+	</script>
+</body>
+</html>

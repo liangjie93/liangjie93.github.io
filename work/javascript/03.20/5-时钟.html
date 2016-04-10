@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>时钟</title>
+</head>
+<body>
+	<span id="hours"></span>:
+	<span id="minutes"></span>:
+	<span id="seconds"></span>
+	<script src="../jquery-1.11.1.js"></script>
+	<script>
+		var time = new Date();
+		var h = time.getHours();
+		//console.log(hours);
+		var m = time.getMinutes();
+		//console.log(minutes);
+		var s = time.getSeconds();
+		//console.log(seconds);
+		//document.write(hours+":",minutes+":",seconds);
+
+		function setTime(){
+			$("#hours").text(h);
+			$("#minutes").text(m);
+			$("#seconds").text(s);
+		}
+		setTime();
+		setInterval(setTime,1000);
+
+
+
+
+	</script>
+</body>
+</html>

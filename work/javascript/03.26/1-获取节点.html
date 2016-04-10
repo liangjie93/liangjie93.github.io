@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>获取节点</title>
+</head>
+<body>
+	<input type="button" id="btn" value="按钮">
+	<input type="button" class="num" value="1">
+	<input type="button" class="num" value="2">
+	<input type="button" class="num" value="3">
+	<ul id="fruit">
+		<li>苹果</li>
+		<li>香蕉</li>
+		<li>橘子</li>
+	</ul>
+	<script>
+		var oBtn = document.getElementById("btn");	//获取ID 节点
+		oBtn.onclick = function(){
+			alert("hello")
+		}
+
+		var aBtn = document.getElementsByClassName("num");	//获取class
+		for(var i=0;i<aBtn.length;i++){
+			aBtn[i].onclick=function(){
+				aBtn.value=this.value
+			}
+		}
+
+		var aInput = document.getElementsByTagName("input");	//获取标签
+		console.log(aInput);
+
+		var oFruit = document.getElementById("fruit");
+		var aLi = oFruit.children;
+
+
+
+
+
+
+	</script>
+</body>
+</html>

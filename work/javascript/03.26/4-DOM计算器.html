@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.calculator{
+			border:2px #aaa solid;
+			width: 204px;
+			height: 170px;
+			margin:0 auto;
+		}
+		#txt{
+			width: 200px;
+			height: 30px;
+			border:1px #aaa solid;
+			margin: 1px;
+		}
+		.btn{
+			width: 43px;
+			height: 25px;
+			margin: 5px 1px;
+		}
+
+	</style>	
+</head>
+<body>
+	<div class="calculator">
+		<input type="text"  id="txt">	
+		<div class="box1">
+			<input type="button" value="7" class="btn num" >
+			<input type="button" value="8" class="btn num" >	
+			<input type="button" value="9" class="btn num" >
+			<input type="button" value="+" class="btn sign" >		
+		</div>
+		<div class="box2">			
+			<input type="button" value="4" class="btn num">
+			<input type="button" value="5" class="btn num">
+			<input type="button" value="6" class="btn num">
+			<input type="button" value="-" class="btn sign">
+		</div>
+		<div class="box3">
+			<input type="button" value="1" class="btn num">
+			<input type="button" value="2" class="btn num">
+			<input type="button" value="3" class="btn num">
+			<input type="button" value="*" class="btn sign">
+		</div>
+		<div class="box4">
+			<input type="button" value="0" class="btn num" >
+			<input type="button" value="C" class="btn" id="clear">
+			<input type="button" value="=" class="btn" id="result">
+			<input type="button" value="/" class="btn sign" >	
+		</div>
+	</div>
+
+	<script>
+		var aNum = document.getElementsByClassName("num");
+		var aSign = document.getElementsByClassName("sign");
+		var oResult = document.getElementById("result");
+		var oClear = document.getElementById("clear");		
+		var oTxt = document.getElementById("txt");
+
+		var num1 = "";
+		var num2 = "";
+		var sign = "";
+		var result = 0;
+
+		for(var i=0;i<aNum.length;i++){
+			aNum[i].onclick = function(){
+				if(sign == ""){
+					num1 += this.value;
+					oTxt.value = num1;
+				}else{
+					num2 += this.value;
+					oTxt.value = num2;
+				}
+			}
+		}
+		for(var j=0;j<aSign.length;j++){
+			aSign[j].onclick = function(){
+				sign = this.value;
+			}
+		}
+		oResult.onclick = function(){
+			var number1 = Number(num1);
+			var number2 = Number(num2);
+			switch(sign){
+				case "+" :result=number1+number2;break
+				case "-" :result=number1-number2;break
+				case "*" :result=number1*number2;break
+				case "/" :result=number1/number2;break
+			}oTxt.value=result;
+		}
+
+
+	</script>
+</body>
+</html>

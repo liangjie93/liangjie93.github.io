@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>自动轮播</title>
+
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.view{
+			width: 300px;
+			height: 200px;
+			overflow: hidden;
+		}
+		.box{
+			width: 1200px;
+			height: 200px;
+		}
+		img{
+			width: 300px;
+			height: 200px;
+			float: left;	
+		}
+		ul{
+			
+			list-style: none;
+			position: absolute;
+			left: 220px;
+			top:180px;			
+		}
+		li{
+			float: left;
+		}
+		.btn{
+			width: 20px;
+			height: 20px;
+			background-color: #fff;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="view">
+		<div class="box">
+			<img src="../images/1.jpg" alt="">
+			<img src="../images/2.jpg" alt="">
+			<img src="../images/3.jpg" alt="">
+			<img src="../images/4.jpg" alt="">
+		</div>	
+		<ul>
+			<li><input type="button" class="btn" value="1"></li>
+			<li><input type="button" class="btn" value="2"></li>
+			<li><input type="button" class="btn" value="3"></li>
+			<li><input type="button" class="btn" value="4"></li>			
+		</ul>
+		
+		<script src="../jquery-1.11.1.js"></script>
+		<script>
+			num=0;
+			function ani(){
+				var marleft = num *(-300);
+				
+				$(".box").animate({"margin-left":marleft},1000);
+				num++;
+				num = num ==4 ? 0 : num;		// if(num ==4){num=0;}
+			}									
+												
+			
+			 var t = setInterval(ani,2000);			//执行函数
+
+			 $(".btn").mouseenter(function(){
+			 	clearInterval(t);		//鼠标移入 清除计时
+			 })
+			 .mouseleave(function(){
+			 	t = setInterval(ani,2000);			//鼠标移出 执行函数
+			 })
+			 .click(function(){				//鼠标点击切换				
+				var index = $(this).parent().index();
+				var marleft=index*(-300);
+				num = index+1;
+				$(".box").animate({"margin-left":marleft},1000);
+
+			// $(this).css("background-color","red")
+			// }).mouseleave(function(){
+			// 	$(this).css("background-color","#fff")
+			 })
+			
+			// var t = setInterval(ani,1000);
+
+			
+		</script>
+	</div>
+</body>
+</html>

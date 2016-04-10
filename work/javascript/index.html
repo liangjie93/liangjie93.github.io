@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript</title>
+	<link rel="stylesheet" href="css/main.css">
+	<meta name="viewport" content="width=device-width">  <!--没有这行，元素的像素值会被手机浏览器压缩-->
+	<link rel="stylesheet" href="css/font-awesome.min.css">	
+	<script src="jquery-1.11.1.js"></script>
+</head>
+<body>
+	<div class="top clearfix">
+		<a class="hamburger">
+			<i class="icon-reorder"></i>
+		</a>
+		<a class="btn" href="http://liangjie93.github.io">返回</a>
+		<h1>JavaScript</h1>
+	</div>
+	<div class="sidebar">                <!-- sidebar 导航栏滑出 -->
+		<ul>
+			<li><a href="">HOME</a></li>
+			<li><a href="">JavaScript</a></li>
+			<li><a href="">About</a></li>
+		</ul>
+	</div>
+
+	<div class="ui-mask"></div>           <!-- 页面变黑 -->
+
+	<div class="box" id="03.05">
+		<ul class="toc">
+			<li><a class="clearfix" href="03.05/1-helloworld.html">
+					<div class="list">1</div>
+					<div class="detial">
+						<div class="title">1-helloworld</div>
+						<div class="date">2016.03.05</div>
+					</div>
+				</a>
+			</li>
+			<li><a class="clearfix" href="03.05/2-变色.html">
+					<div class="list">2</div>
+					<div class="detial">
+						<div class="title">2-变色</div>
+						<div class="date">2016.03.05</div>
+					</div>
+				</a>
+			</li>		
+			<li><a class="clearfix" href="03.05/3-更换图片.html">
+					<div class="list">3</div>
+					<div class="detial">
+						<div class="title">3-更换图片</div>
+						<div class="date">2016.03.05</div>
+					</div>
+				</a>
+			</li>		
+			<li><a class="clearfix" href="03.05/4-切换图片.html">
+					<div class="list">4</div>
+					<div class="detial">
+						<div class="title">4-切换图片</div>
+						<div class="date">2016.03.05</div>
+					</div>
+				</a>
+			</li>		
+			<li><a class="clearfix" href="03.05/5-定位.html">
+					<div class="list">5</div>
+					<div class="detial">
+						<div class="title">5-定位</div>
+						<div class="date">2016.03.05</div>
+					</div>
+				</a>
+			</li>		
+			<li><a class="clearfix" href="03.05/6-居中.html">
+					<div class="list">6</div>
+					<div class="detial">
+						<div class="title">6-居中</div>
+						<div class="date">2016.03.05</div>
+					</div>
+				</a>
+			</li>		
+			<li><a class="clearfix" href="03.05/7-动画方法.html">
+					<div class="list">7</div>
+					<div class="detial">
+						<div class="title">7-动画方法</div>
+						<div class="date">2016.03.05</div>
+					</div>
+				</a>
+			</li>				
+		</ul>
+	</div>
+
+	<div class="box" id="03.06">
+		<ul class="toc">
+			<li><a class="clearfix" href="03.06/1-JQuery事件.html">
+					<div class="list">8</div>
+					<div class="detial">
+						<div class="title">1-JQuery事件</div>
+						<div class="date">2016.03.06</div>
+					</div>
+				</a>
+			</li>
+			<li><a class="clearfix" href="03.06/2-下拉菜单.html">
+					<div class="list">9</div>
+					<div class="detial">
+						<div class="title">2-下拉菜单</div>
+						<div class="date">2016.03.06</div>
+					</div>
+				</a>
+			</li>		
+			<li><a class="clearfix" href="03.06/3-自定义动画.html">
+					<div class="list">10</div>
+					<div class="detial">
+						<div class="title">3-自定义动画</div>
+						<div class="date">2016.03.06</div>
+					</div>
+				</a>
+			</li>		
+			<li><a class="clearfix" href="03.06/4-自定义动画 按钮切换图.html">
+					<div class="list">11</div>
+					<div class="detial">
+						<div class="title">4-自定义动画 按钮切换图</div>
+						<div class="date">2016.03.06</div>
+					</div>
+				</a>
+			</li>		
+			<li><a class="clearfix" href="03.06/5-DOM操作.html">
+					<div class="list">12</div>
+					<div class="detial">
+						<div class="title">5-DOM操作</div>
+						<div class="date">2016.03.06</div>
+					</div>
+				</a>
+			</li>		
+			<li><a class="clearfix" href="03.06/6-图片放大效果.html">
+					<div class="list">13</div>
+					<div class="detial">
+						<div class="title">6-图片放大效果</div>
+						<div class="date">2016.03.06</div>
+					</div>
+				</a>
+			</li>				
+		</ul>
+	</div>	
+
+	<div class="box" id="03.12">
+		<ul class="toc">
+			<li><a class="clearfix" href="03.12/1-图片放大效果.html">
+					<div class="list">14</div>
+					<div class="detial">
+						<div class="title">1-图片放大效果</div>
+						<div class="date">2016.03.12</div>
+					</div>
+				</a>
+			</li>
+			<li><a class="clearfix" href="03.12/2-nav滚动.html">
+					<div class="list">15</div>
+					<div class="detial">
+						<div class="title">2-nav滚动</div>
+						<div class="date">2016.03.12</div>
+					</div>
+				</a>
+			</li>		
+			<li><a class="clearfix" href="03.12/3-选项卡.html">
+					<div class="list">16</div>
+					<div class="detial">
+						<div class="title">3-选项卡</div>
+						<div class="date">2016.03.12</div>
+					</div>
+				</a>
+			</li>		
+			<li><a class="clearfix" href="03.12/4-数值相加.html">
+					<div class="list">17</div>
+					<div class="detial">
+						<div class="title">4-数值相加</div>
+						<div class="date">2016.03.12</div>
+					</div>
+				</a>
+			</li>		
+			<li><a class="clearfix" href="03.12/5-购物车数量加减.html">
+					<div class="list">18</div>
+					<div class="detial">
+						<div class="title">5-购物车数量加减</div>
+						<div class="date">2016.03.12</div>
+					</div>
+				</a>
+			</li>					
+		</ul>
+	</div>
+
+	<div class="box" id="03.13">
+		<ul class="toc">
+			<li><a class="clearfix" href="03.13/1-if语句.html">
+					<div class="list">19</div>
+					<div class="detial">
+						<div class="title">1-if语句</div>
+						<div class="date">2016.03.13</div>
+					</div>
+				</a>
+			</li>
+			<li><a class="clearfix" href="03.13/2-加减乘除.html">
+					<div class="list">20</div>
+					<div class="detial">
+						<div class="title">2-加减乘除</div>
+						<div class="date">2016.03.13</div>
+					</div>
+				</a>
+			</li>		
+			<li><a class="clearfix" href="03.13/3-for循环0-100相加.html">
+					<div class="list">21</div>
+					<div class="detial">
+						<div class="title">3-for循环0-100相加</div>
+						<div class="date">2016.03.13</div>
+					</div>
+				</a>
+			</li>		
+			<li><a class="clearfix" href="03.13/4-计算器.html">
+					<div class="list">22</div>
+					<div class="detial">
+						<div class="title">4-计算器</div>
+						<div class="date">2016.03.13</div>
+					</div>
+				</a>
+			</li>		
+			<li><a class="clearfix" href="03.13/5-函数.html">
+					<div class="list">23</div>
+					<div class="detial">
+						<div class="title">5-函数</div>
+						<div class="date">2016.03.13</div>
+					</div>
+				</a>
+			</li>		
+			<li><a class="clearfix" href="03.13/6-对象.html">
+					<div class="list">24</div>
+					<div class="detial">
+						<div class="title">6-对象</div>
+						<div class="date">2016.03.13</div>
+					</div>
+				</a>
+			</li>				
+		</ul>
+	</div>	
+
+	<div class="box" id="03.19">
+		<ul class="toc">
+			<li><a class="clearfix" href="03.19/1-数组对象.html">
+					<div class="list">25</div>
+					<div class="detial">
+						<div class="title">1-数组对象</div>
+						<div class="date">2016.03.19</div>
+					</div>
+				</a>
+			</li>
+			<li><a class="clearfix" href="03.19/2-日期对象.html">
+					<div class="list">26</div>
+					<div class="detial">
+						<div class="title">2-日期对象</div>
+						<div class="date">2016.03.19</div>
+					</div>
+				</a>
+			</li>		
+			<li><a class="clearfix" href="03.19/3-数学对象.html">
+					<div class="list">27</div>
+					<div class="detial">
+						<div class="title">3-数学对象</div>
+						<div class="date">2016.03.19</div>
+					</div>
+				</a>
+			</li>		
+			<li><a class="clearfix" href="03.19/4-正则表达式.html">
+					<div class="list">281</div>
+					<div class="detial">
+						<div class="title">4-正则表达式</div>
+						<div class="date">2016.03.19</div>
+					</div>
+				</a>
+			</li>		
+			<li><a class="clearfix" href="03.19/5-表单验证.html">
+					<div class="list">29</div>
+					<div class="detial">
+						<div class="title">5-表单验证</div>
+						<div class="date">2016.03.19</div>
+					</div>
+				</a>
+			</li>					
+		</ul>
+	</div>
+
+	<div class="box" id="03.20">
+		<ul class="toc">
+			<li><a class="clearfix" href="03.20/1-删除元素-window对象.html">
+					<div class="list">30</div>
+					<div class="detial">
+						<div class="title">1-删除元素-window对象</div>
+						<div class="date">2016.03.20</div>
+					</div>
+				</a>
+			</li>
+			<li><a class="clearfix" href="03.20/2-添加元素.html">
+					<div class="list">31</div>
+					<div class="detial">
+						<div class="title">2-添加元素</div>
+						<div class="date">2016.03.20</div>
+					</div>
+				</a>
+			</li>		
+			<li><a class="clearfix" href="03.20/3-计时器.html">
+					<div class="list">32</div>
+					<div class="detial">
+						<div class="title">3-计时器</div>
+						<div class="date">2016.03.20</div>
+					</div>
+				</a>
+			</li>		
+			<li><a class="clearfix" href="03.20/4-5秒后跳转.html">
+					<div class="list">33</div>
+					<div class="detial">
+						<div class="title">4-5秒后跳转</div>
+						<div class="date">2016.03.20</div>
+					</div>
+				</a>
+			</li>		
+			<li><a class="clearfix" href="03.20/5-时钟.html">
+					<div class="list">34</div>
+					<div class="detial">
+						<div class="title">5-时钟</div>
+						<div class="date">2016.03.20</div>
+					</div>
+				</a>
+			</li>		
+			<li><a class="clearfix" href="03.20/6-图片自动轮播.html">
+					<div class="list">35</div>
+					<div class="detial">
+						<div class="title">6-图片自动轮播</div>
+						<div class="date">2016.03.20</div>
+					</div>
+				</a>
+			</li>	
+			<li><a class="clearfix" href="03.20/7-抢购倒计时.html">
+					<div class="list">36</div>
+					<div class="detial">
+						<div class="title">7-抢购倒计时</div>
+						<div class="date">2016.03.20</div>
+					</div>
+				</a>
+			</li>							
+		</ul>
+	</div>
+
+	<div class="box" id="03.26">
+		<ul class="toc">
+			<li><a class="clearfix" href="03.26/1-获取节点.html">
+					<div class="list">37</div>
+					<div class="detial">
+						<div class="title">1-获取节点</div>
+						<div class="date">2016.03.26</div>
+					</div>
+				</a>
+			</li>
+			<li><a class="clearfix" href="03.26/2-下拉菜单.html">
+					<div class="list">38</div>
+					<div class="detial">
+						<div class="title">2-设置属性</div>
+						<div class="date">2016.03.26</div>
+					</div>
+				</a>
+			</li>		
+			<li><a class="clearfix" href="03.26/3-添加删除节点.html">
+					<div class="list">39</div>
+					<div class="detial">
+						<div class="title">3-添加删除节点</div>
+						<div class="date">2016.03.26</div>
+					</div>
+				</a>
+			</li>		
+			<li><a class="clearfix" href="03.26/4-DOM计算器.html">
+					<div class="list">40</div>
+					<div class="detial">
+						<div class="title">4-DOM计算器</div>
+						<div class="date">2016.03.26</div>
+					</div>
+				</a>
+			</li>		
+			<li><a class="clearfix" href="03.26/5-图片切换.html">
+					<div class="list">41</div>
+					<div class="detial">
+						<div class="title">5-图片切换</div>
+						<div class="date">2016.03.26</div>
+					</div>
+				</a>
+			</li>					
+		</ul>
+	</div>
+
+	<div class="box" id="03.27">
+		<ul class="toc">
+			<li><a class="clearfix" href="03.27/1-模拟jQuery方法.html">
+					<div class="list">42</div>
+					<div class="detial">
+						<div class="title">1-模拟jQuery方法</div>
+						<div class="date">2016.03.27</div>
+					</div>
+				</a>
+			</li>
+			<li><a class="clearfix" href="03.27/2-图片切换.html">
+					<div class="list">43</div>
+					<div class="detial">
+						<div class="title">2-图片切换</div>
+						<div class="date">2016.03.27</div>
+					</div>
+				</a>
+			</li>		
+			<li><a class="clearfix" href="03.27/3-事件冒泡、事件捕获.html">
+					<div class="list">44</div>
+					<div class="detial">
+						<div class="title">3-事件冒泡、事件捕获</div>
+						<div class="date">2016.03.27</div>
+					</div>
+				</a>
+			</li>		
+			<li><a class="clearfix" href="03.27/4-事件委托.html">
+					<div class="list">45</div>
+					<div class="detial">
+						<div class="title">4-事件委托</div>
+						<div class="date">2016.03.27</div>
+					</div>
+				</a>
+			</li>		
+			<li><a class="clearfix" href="03.27/5-原始类型、引用类型.html">
+					<div class="list">46</div>
+					<div class="detial">
+						<div class="title">5-原始类型、引用类型</div>
+						<div class="date">2016.03.27</div>
+					</div>
+				</a>
+			</li>						
+		</ul>
+	</div>
+
+	<div class="box" id="04.02">
+		<ul class="toc">
+			<li><a class="clearfix" href="04.02/1-递归函数.html">
+					<div class="list">47</div>
+					<div class="detial">
+						<div class="title">1-递归函数</div>
+						<div class="date">2016.04.02</div>
+					</div>
+				</a>
+			</li>
+			<li><a class="clearfix" href="04.02/2-随机抽奖1.html">
+					<div class="list">48</div>
+					<div class="detial">
+						<div class="title">2-随机抽奖1</div>
+						<div class="date">2016.04.02</div>
+					</div>
+				</a>
+			</li>		
+			<li><a class="clearfix" href="04.02/3-随机抽奖2.html">
+					<div class="list">49</div>
+					<div class="detial">
+						<div class="title">3-随机抽奖2</div>
+						<div class="date">2016.04.02</div>
+					</div>
+				</a>
+			</li>		
+			<li><a class="clearfix" href="04.02/4-随机抽奖3.html">
+					<div class="list">50</div>
+					<div class="detial">
+						<div class="title">4-随机抽奖3</div>
+						<div class="date">2016.04.02</div>
+					</div>
+				</a>
+			</li>		
+			<li><a class="clearfix" href="04.02/5-回调函数.html">
+					<div class="list">51</div>
+					<div class="detial">
+						<div class="title">5-回调函数</div>
+						<div class="date">2016.04.02</div>
+					</div>
+				</a>
+			</li>				
+		</ul>
+	</div>
+	
+	<div class="box" id="04.03">
+		<ul class="toc">
+			<li><a class="clearfix" href="04.03/1-闭包.html">
+					<div class="list">52</div>
+					<div class="detial">
+						<div class="title">1-闭包</div>
+						<div class="date">2016.04.03</div>
+					</div>
+				</a>
+			</li>
+			<li><a class="clearfix" href="04.03/2-构造函数.html">
+					<div class="list">53</div>
+					<div class="detial">
+						<div class="title">2-构造函数</div>
+						<div class="date">2016.04.03</div>
+					</div>
+				</a>
+			</li>		
+			<li><a class="clearfix" href="04.03/3-原型对象.html">
+					<div class="list">54</div>
+					<div class="detial">
+						<div class="title">3-原型对象</div>
+						<div class="date">2016.04.03</div>
+					</div>
+				</a>
+			</li>		
+			<li><a class="clearfix" href="04.03/4-继承.html">
+					<div class="list">55</div>
+					<div class="detial">
+						<div class="title">4-继承</div>
+						<div class="date">2016.04.03</div>
+					</div>
+				</a>
+			</li>		
+			<li><a class="clearfix" href="04.03/5-模拟jquery库.html">
+					<div class="list">56</div>
+					<div class="detial">
+						<div class="title">5-模拟jquery库</div>
+						<div class="date">2016.04.03</div>
+					</div>
+				</a>
+			</li>				
+		</ul>
+	</div>
+
+	<div class="box" id="04.09">
+		<ul class="toc">
+			<li><a class="clearfix" href="04.09/1-jquery中的事件绑定.html">
+					<div class="list">57</div>
+					<div class="detial">
+						<div class="title">1-jquery中的事件绑定</div>
+						<div class="date">2016.04.09</div>
+					</div>
+				</a>
+			</li>
+			<li><a class="clearfix" href="04.09/2-事件委托.html">
+					<div class="list">58</div>
+					<div class="detial">
+						<div class="title">2-事件委托</div>
+						<div class="date">2016.04.09</div>
+					</div>
+				</a>
+			</li>		
+			<li><a class="clearfix" href="04.09/3-jquery中的each方法.html">
+					<div class="list">10</div>
+					<div class="detial">
+						<div class="title">3-jquery中的each方法</div>
+						<div class="date">2016.04.09</div>
+					</div>
+				</a>
+			</li>		
+			<li><a class="clearfix" href="04.09/4-菜单置顶.html">
+					<div class="list">11</div>
+					<div class="detial">
+						<div class="title">4-菜单置顶</div>
+						<div class="date">2016.04.09</div>
+					</div>
+				</a>
+			</li>		
+			<li><a class="clearfix" href="04.09/5-使用插件实现图片轮播.html">
+					<div class="list">12</div>
+					<div class="detial">
+						<div class="title">5-使用插件实现图片轮播</div>
+						<div class="date">2016.04.09</div>
+					</div>
+				</a>
+			</li>			
+		</ul>
+	</div>
+
+
+
+	<script>
+		$('.hamburger').click(function(){
+			$('.sidebar').addClass('show');
+			$('.ui-mask').addClass('show');
+		})	
+		$('.ui-mask').click(function(){
+			$('.sidebar').removeClass('show');
+			$(this).removeClass('show');
+		})
+	</script>
+</body>
+</html>

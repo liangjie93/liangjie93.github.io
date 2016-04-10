@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>5秒跳转</title>
+</head>
+<body>
+	<p><span id="second"></span>秒后跳转到百度</p>
+
+	<script src="../jquery-1.11.1.js"></script>
+	<script>
+		
+		var second = 5;			//初始值
+		// $("#second").text(second);		//将初始值second=5 显示到页面中
+		function setTime(){			//函数
+			$("#second").text(second);		//显示倒计时5 4 3 2 1
+			second--;			//每次-1
+			if(second ==0){			//当时间为0时
+				location.href ="http://baidu.com"		//跳转页面
+			}
+		}
+		setInterval(setTime,1000);		//每隔1s执行一次函数
+	</script>
+</body>
+</html>

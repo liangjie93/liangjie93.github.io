@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>事件委托</title>
+	<style>
+		.del{
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<input type="text" id="txt">
+	<input type="button" id="btn" value="添加">
+	<ul id="list">
+		<li>苹果 <span class="del"> 删除</span></li>
+		<li>香蕉 <span class="del"> 删除</span></li>
+		<li>草莓 <span class="del"> 删除</span></li>
+	</ul>
+
+	<script>
+		var oUl = document.getElementById("list");
+		oUl.onclick = function(event){
+			var span = event.target;	//用target点击什么就选什么
+			if(span.className =="del"){	//如果span的class为“del”
+				oUl.removeChild(span.parentNode);	//ul删除子级（子级为span的父级）
+			}
+		}
+
+
+		var oTxt = document.getElementById("txt");
+		var oBtn = document.getElementById("btn");
+		var oUl = document.getElementById("list");
+		oBtn.onclick = function(){
+			var val = oTxt.value;	////获取文本值
+			var textNode = document.createTextNode(val);		//文本节点
+			var oLi = document.createElement("li");				//元素节点
+			var oSpan = document.createElement("span");
+			var delNode = document.createTextNode(" 删除");
+
+			oSpan.appendChild(delNode);	//
+			oSpan.className="del";
+
+			oLi.appendChild(textNode);	
+			oLi.appendChild(oSpan);	
+
+			oUl.appendChild(oLi );
+		}
+
+	</script>
+</body>
+</html>

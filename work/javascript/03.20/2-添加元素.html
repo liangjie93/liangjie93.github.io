@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>添加</title>
+</head>
+<body>
+	<input type="button" id="btn" value="添加">
+	<ul>
+		<li>苹果</li>
+		<li>香蕉</li>
+		<li>草莓</li>
+	</ul>
+
+	<script src="../jquery-1.11.1.js"></script>
+	<script>
+		$("#btn").click(function(){
+			var result = window.prompt("是否添加")
+			if (result !=null){
+				
+				$("ul").append("<li>"+result+"</li>" );
+			}
+		})
+	</script>
+</body>
+</html>

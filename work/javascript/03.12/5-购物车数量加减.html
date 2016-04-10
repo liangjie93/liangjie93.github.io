@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车数量加减</title>
+</head>
+<body>
+	<input id="txt" type="text" value="1">
+	<input id="plus" type="button" value="+">
+	<input id="cut" type="button" value="-">
+
+		<script src="../jquery-1.11.1.js"></script>
+		<script>
+
+			$("#plus").click(function(){
+				var val = Number($("#txt").val());
+				var result = val + 1;
+				$("#txt").val(result);
+			})
+			$("#cut").click(function(){
+				var val = Number($("#txt").val());
+				if(val>0){
+					var result = val-1;
+					$("#txt").val(result);
+				}
+			})
+
+
+
+
+			// $(document).ready(function(){
+			// //加的效果
+			// 	$("#btn1").click(function(){
+			// 	var n=$(this).prev().val();
+			// 	var num=parseInt(n)+1;
+			// 	if(num==0){ return;}
+			// 	$(this).prev().val(num);
+			// 	});
+			// //减的效果
+			// 	$("#btn2").click(function(){
+			// 	var n=$(this).next().val();
+			// 	var num=parseInt(n)-1;
+			// 	if(num==0){ return;}
+			// 	$(this).next().val(num);
+			// 	});
+			// })
+
+
+
+			// $("#btn1")click(function(){
+			// 	var num=0;
+			// 	if(num>=0){
+					
+			// 		num=num+1;
+			// 		$("#num").val(num);
+			// 	}
+			// })
+			
+
+			// $("#btn1")click(function(){
+			// 	var str=$("#num").val();
+			// 	var num=Number(str);
+			// 	var num=0;
+			// 	var num=num+1;
+			// 	$("#num").val(num);
+			// })
+		</script>
+	<!-- 两个事件 定义变量0 +1  -->
+</body>
+</html>
