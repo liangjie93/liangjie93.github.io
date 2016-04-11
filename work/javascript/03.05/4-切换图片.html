@@ -23,7 +23,7 @@
 	</style>
 </head>
 <body>
-	<img id="pic" src="images/1.jpg" alt="">
+	<img id="pic" src="../images/1.jpg" alt="">
 	<ul>
 		<li><input type="button" class="btn" id="btn1" value="1"></li>
 		<li><input type="button" class="btn" id="btn2" value="2"></li>
@@ -35,7 +35,7 @@
 	<script type="text/javascript">
 		$(".btn").click(function(){
 			var index=$(this).parent().index();
-			var src="images/"+(index+1)+".jpg";
+			var src="../images/"+(index+1)+".jpg";
 			$("#pic").attr("src",src);
 			$(this).addClass("color");
 			$(this).parent().siblings().find(".btn").removeClass("color");

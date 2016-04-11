@@ -39,17 +39,20 @@
 		<li>22</li>
 		<li>33</li>
 		<li>44</li>
+
 	</ul>
 	<div class="clear"></div>
 	<div>
 		<div class="box" id="first">1</div>
 		<div class="box">2</div>
 		<div class="box">3</div>
+		<div class="box">4</div>
 	</div>
 	<script src="../jquery-1.11.1.js"></script>
 	<script>
 		$(".list li").click(function(){
-			
+			var index = $(this).index();
+			$(".box").eq(index).css("display","block").siblings().css("display","none")
 		})
 	</script>
 </body>
