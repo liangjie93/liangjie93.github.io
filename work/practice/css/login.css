@@ -1,0 +1,133 @@
+	*{
+		margin: 0;
+		padding: 0;
+	}
+		.login-box{
+			width: 500px;
+			height: 522px;
+			background-color: #fff;
+			position:relative;
+		}
+		/*-- logo 标题*/
+		.login-box .logo{				 
+			padding-top: 24px;
+			padding-left: 171px;
+		}
+		.login-box .logo img{
+			float: left;
+		}
+		.login-box .logo h3{
+			font-size: 37px;
+			margin: 2px 0 0 66px;
+			font-family: "黑体";	
+		}
+		.login-box .logo p{
+			font-size: 13px;
+			font-style: italic;
+			margin: 0 0 2px 66px;
+			color: #c7c4c6;
+			font-family:"Microsoft YaHei";
+		}
+		/*用户名 密码 登陆按钮*/
+		.login-box .account #yhm{	
+			width: 353px;
+			height: 53px;
+			margin-left: 73px;
+			margin-top: 45px;
+			border: 1px solid #e5e5e5;
+		}
+		.login-box .account #pwd{
+			width: 353px;
+			height: 53px;
+			margin-left: 73px;
+			margin-top: 16px;
+			border: 1px solid #e5e5e5;		
+		}
+/*		.login-box .account #pwd2{
+			width: 353px;
+			height: 53px;
+			margin-left: 73px;
+			margin-top: 16px;
+			border: 1px solid #e5e5e5;	
+		}*/
+		.login-box .account #login{
+			width: 353px;
+			height: 50px;
+			margin-top: 15px;
+			margin-left: 75px;
+			border: 0px;	
+			border-radius: 5px;
+			background-color: #50bbdb;				
+			color: #fff;
+			cursor: pointer;
+			
+			font-size: 25px;		
+		}
+		/*忘记密码 注册 其他报名方式*/
+		.login-box .other #forget{
+			font-size: 14px;
+			margin-top: 21px;
+			margin-left: 73px;
+			float: left;
+			color: #50bbdb;
+			font-family:"Microsoft YaHei";
+		}
+		
+		.login-box .other #register{
+			font-size: 14px;
+			display: block;
+			margin-top: 21px;
+			margin-right: 73px;
+			float: right;
+			color: #333333;
+			font-family:"Microsoft YaHei";
+		}
+		.login-box .other #register a{
+			text-decoration: none;
+			color: #50bbdb;
+		}
+		
+		.login-box .other .row{
+			width: 134px;
+			height: 1px;
+			background-color: #50bbdb;
+		}
+		.login-box .other .left{
+			float: left;
+			margin: 50px 0 0 75px;	
+		
+			clear: both;		
+		}
+		.login-box .other .right{
+			float: right;
+			margin:50px 75px 0 0;	
+		}
+		.login-box .other #qita{
+			display: block;
+			float: left;
+			font-size: 13px;
+			color: #a9a9a9;
+			margin-top: 42px;
+			margin-left: 2px;
+			font-family:"Microsoft YaHei";
+		}
+		.login-box .other #nLogin{
+			width: 233px;
+			height: 44px;		
+			border: 0px;	
+			border-radius: 5px;
+			margin-left: 134px;
+			margin-top: 30px;
+			background-color: #50bbdb;
+			font-size: 20px;
+			
+			color: #fff;
+			cursor: pointer;
+		}
+		/*关闭*/
+		.login-box #close{
+			position:absolute;
+			top:13px;
+			right: 13px;
+			float: left;
+		}

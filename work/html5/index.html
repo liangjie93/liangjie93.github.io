@@ -5,29 +5,34 @@
 	<title>HTML5/CSS3</title>
 	<link rel="stylesheet" href="main.css">
 	<meta name="viewport" content="width=device-width">  <!--没有这行，元素的像素值会被手机浏览器压缩-->
-	<link rel="stylesheet" href="21/css/font-awesome.min.css">	
+	<link rel="stylesheet" href="21/css/font-awesome.min.css">	<!-- 侧边导航栏样式 -->
 	<script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body>
+	<!-- 音乐播放，用hidden="hidden"可隐藏 -->
 	<audio controls="controls" autoplay="autoplay" loop="loop" style="float: right;">
 		<source src="陈奕迅 - 阴天快乐.mp3" type="audio/mpeg" />
 	</audio>
-	<div class="top clearfix">
+	<!-- 顶部 -->
+	<div class="top clearfix">		
 		<a class="hamburger">
 			<i class="icon-reorder"></i>
 		</a>
-		<a class="btn" href="../../index.html" target="_blank">返回</a>
+		<a class="btn" href="../index.html" target="_blank">返回</a>
 		<h1>HTML5/CSS3</h1>
 	</div>
-	<div class="sidebar">                <!-- sidebar 导航栏滑出 -->
+	<!-- sidebar 导航栏滑出 -->
+	<div class="sidebar">                
 		<ul>
-			<li><a href="">HOME</a></li>
+			<li><a href="../../index.html" target="_blank">HOME</a></li>
 			<li><a href="">HTML5/CSS3</a></li>
 			<li><a href="">About</a></li>
 		</ul>
 		</div>   
-	<div class="ui-mask"></div>           <!-- 页面变黑 -->
+	 <!-- 页面变黑 -->	
+	<div class="ui-mask"></div>    
 
+	<!-- 列表 -->
 	<ul class="toc">
 		<li><a class="clearfix" href="1">
 				<div class="list">1</div>
