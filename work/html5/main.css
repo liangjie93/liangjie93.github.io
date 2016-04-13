@@ -17,6 +17,7 @@
 		background-color: #f5dcf5;
 		font-family: "Helvetica Neue", "Segoe UI", Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif
 	}
+/*	顶部 */
 	.top {
 		background-color: #00bcd4;
 		height: 200px;
@@ -72,6 +73,7 @@
 		transform: translateX(0);
 	}*/
 
+/*sidebar 导航栏滑出*/
 	.sidebar {
 		width: 200px;
 		background-color: #fff;
@@ -119,6 +121,7 @@
 		display: block;
 	}
 
+/*列表*/
 	.toc {
 		margin: auto;
 		padding: 10px;
