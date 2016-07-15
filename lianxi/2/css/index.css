@@ -1,0 +1,69 @@
+/*banner*/
+body{ overflow:hidden;}
+.banner{ width:100%; margin:0 auto; overflow:hidden;}
+#IndexBanner{width:100%; height:600px; position:relative; overflow:hidden; margin:0 auto;}
+#IndexBanner .Item{display:block;width:100%; height:600px; position:absolute; top:0; left:50%; margin-left: -960px; display:block;}
+#IndexBanner .Item img{ width: 1920px; height:600px;}
+#IndexBanner #PicNum{position:absolute; left:50%; bottom:40px; margin-left:-130px;}
+#IndexBanner #PicNum li{ width:47px; height:6px; background-position:-210px -38px;background: #f1f7bc; margin-right: 18px; float:left; text-align:right; cursor:pointer;border-radius:2px;}
+#IndexBanner #PicNum .cur{ width:47px; height:6px; background-position:0 0;background:#dcf038;border-radius:2px;}
+/*楼层*/
+.floor{width:100%;margin:0 auto; overflow:hidden;position: relative;height: 600px;display: block;}
+.floorBox{ position: relative;}
+.floor img{display: block;width:1920px;height: 600px;position: absolute;left: 50%;margin-left: -960px;}
+/*宜家新闻*/
+.news{width:100%;height:600px;background: url(../images/index_bj01.jpg) center;position: relative;font-size: 12px;}
+.news a{color: #fefefe;}
+.news>div{position: absolute;}
+.newsCon{padding:0 38px;border:1px solid #88878a;background:url(../images/tm_bj.png) repeat;top:49px;left:50%;margin-left:-500px;}
+.newsTit{margin: 0 auto;width:263px;height: 26px;margin-top:28px;}
+.newsTit img{width: 100%;}
+.newsBox{margin-top: 20px;}
+.newsTop dt{box-shadow:2px 2px 2px rgba(0,0,0,4);}
+.newsTop dt a{display: block;width:202px;height: 101px;}
+.newsTop dt img{width: 100%;}
+.newsLittle_tit{font-size:16px;font-weight: bold;display: block;margin:14px 0 0 26px;width:218px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.newsTop dd p{display: inline-block;width:240px;line-height:20px;text-indent: 1em;margin:14px 0 0 4px;height: 60px;overflow: hidden;}
+.newsLeft ul{margin-top:10px;}
+.newsLeft li{border-bottom: 1px solid #ccc;padding-bottom:7px;margin-top:10px;}
+.newsLeft ul dt{width:40px;height: 43px;background: url(../images/icon.png) left -31px;margin-right:17px;color: #fff;font-size:24px;}
+.newsLeft ul dt p{display: inline-block;margin:9px 0 0 11px;}
+.newsLeft ul dd p{display: inline-block;width:384px;text-indent: 1em;line-height: 22px;height: 44px;overflow: hidden;}
+.newsRight{margin:62px 0 0 40px;}
+.newsMore{display: block;width: 70px;height: 20px;background: #d7f070;text-align: center;line-height: 20px;color: #333;margin: 20px 0 50px 0;}
+.newsFloat_top,.newsFloat_bottom{background: #fff;width:1px;left:50%;}
+.newsFloat_top{height: 60px;top: 0;}
+.newsFloat_bottom{height: 440px;top: 120px;}
+/*悬浮*/
+.windFloat{position: absolute;z-index: 9999;left:19.99%;top: -22px;}
+.windFloat_bidTit{width:300px;height: 80px;background: url(../images/yellow_tm_bj.png) repeat;margin-left: 46px;position: relative;}
+.windFloat_bidTit img{display: block;position: absolute;top:50%;left: 50%;margin:-9px 0 0 -40px;}
+.windFloat_con{font-size:16px;color: #808080;position:relative;}
+.windFloat_con li{margin-bottom: 1px;background:url(../images/white_tm_bj.png) repeat;cursor: pointer;}
+.windFloat_con i{display: block;width:30px;height: 28px;background:url(../images/icon.png);margin:14px 0 0 6px;float: left;}
+.floatCon_right{margin:19px 0 0 12px;}
+.floatCon_right_tit{margin-bottom: 20px;}
+.floatCon_right_tit p{display:block;width:87px;text-align: right;}
+.floatCon_right_tit b{display:block;width:1px;height: 16px;background: #808080;margin:0 6px;}
+.floatCon_right_tit span{display: block;width:198px;font-family: 'Arial';}
+.floatCon_right_con{display: none;height: 0;}
+.floatCon_right_con div{width:6px;height: 60px;background: #d7f070;margin:31px 20px 0 0;}
+.floatCon_right_con p{display: inline-block;text-indent: 1em;margin: 11px 0 23px 0;font-size:12px;width:240px;line-height:25px;height: 126px;overflow: hidden;color: #f3f3f3;}
+.floatCon_right_con p b{font-size: 16px;}
+.float_line{position: absolute;width: 2px;background: #d7f070;top: 0;left:46px;}
+.windFloat_con .Float_con01{background-position:left -243px;}
+.windFloat_con .Float_con02{background-position:left -271px;}
+.windFloat_con .Float_con03{background-position:left -299px;}
+.windFloat_con .Float_con04{background-position:left -327px;}
+.windFloat_con .Float_con05{background-position:left -355px;}
+.windFloat_con .Float_con06{background-position:left -383px;}
+.windFloat .windFloat_con .checked{background: url(../images/tm_bj.png) repeat;}
+.windFloat_con .checked .floatCon_right_tit{color: #d2f86b;}
+.windFloat_con .checked .floatCon_right_tit b{background: #d2f86b;}
+.windFloat_con .checked .floatCon_right_con{display: block;}
+.windFloat_con .checked .Float_con01{background-position:left -75px;}
+.windFloat_con .checked .Float_con02{background-position:left -103px;}
+.windFloat_con .checked .Float_con03{background-position:left -131px;}
+.windFloat_con .checked .Float_con04{background-position:left -159px;}
+.windFloat_con .checked .Float_con05{background-position:left -187px;}
+.windFloat_con .checked .Float_con06{background-position:left -215px;}
